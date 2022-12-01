@@ -1,2 +1,13 @@
-.exe
-.txt
+# ignore files with no extention:
+*
+!*/
+!*.*
+
+# normal ignores:
+*.exe
+nimcache
+*.pdb
+*.ilk
+.*
+*.dll
+tmp/
