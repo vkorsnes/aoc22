@@ -1,5 +1,4 @@
 import strutils
-import sequtils
 
 let input = readFile("input.txt")
 let pairs = input.splitLines()
@@ -36,10 +35,6 @@ for pair in pairs:
 
     if aUpper >= bLower and aLower <= bUpper:
         overlappingPairs += 1
-    # elif aLower >= bLower and aUpper <= bUpper:
-    #     overlappingPairs += 1
-    # elif bLower >= aLower and bUpper <= aUpper:
-    #     overlappingPairs += 1
 
 echo "Part 2: ", overlappingPairs
 
